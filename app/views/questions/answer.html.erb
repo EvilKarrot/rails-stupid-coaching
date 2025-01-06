@@ -1,0 +1,21 @@
+<div class="d-flex align-items-center">
+  <div class="d-flex flex-column mt-5">
+    <div class="bg-light p-4 mb-3 rounded">
+      <p class="mb-0">
+        <%= params[:question] %>
+        <br>
+        -You
+      </p>
+    </div>
+
+    <div class="bg-light p-4 rounded">
+      <p class="mb-0">
+        <%= @answer %>
+        <br>
+        -Your Coach
+      </p>
+    </div>
+  </div>
+
+  <%= link_to "Ask coach another question", ask_path, class: "btn btn-primary m-4" %>
+</div>
